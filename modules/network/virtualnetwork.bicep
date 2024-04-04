@@ -5,10 +5,10 @@ param location string
 param suseIpList array
 
 @description('The vnet address range')
-param vnetAddressPrefix string = '10.0.0.0/16'
+param vnetAddressPrefix string
 
 @description('The default subnet address range')
-param subnetAddressPrefix string = '10.0.0.0/24'
+param subnetAddressPrefix string 
 
 var virtualNetworkName = 'ACSS-vnet'
 var networkSecurityGroupName = 'acss-nsg'
